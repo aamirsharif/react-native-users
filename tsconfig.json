@@ -1,0 +1,15 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "baseUrl": ".", 
+    "paths": {
+      "@components/*": ["components/*"],
+      "@screens/*": ["screens/*"],
+      "@utils/*": ["utils/*"],
+      "@store/*": ["store/*"]
+    },
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules", "android", "ios", ".bundle"]
+}
